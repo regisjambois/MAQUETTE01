@@ -1,13 +1,23 @@
-<div style="height:50px; background-color:#030a49">
-  <table border="0" style="height:50px">
-    <tr>
-      <td style="width:80px; vertical-align: middle; text-align: center">
-          <img src="../../assets/burger_menu_bl.png" style="height:32px">          
-      </td>
-      <td>
-          <img src="../../assets/sparta.png" style="height:32px">
-      </td>
-    </tr>
-      
-  </table>
+
+<div style="height:80px; background-color:#030a49">
+<table border="0" style="height:80px" >
+  <tr>
+    <td style="vertical-align: middle">
+        <button mat-button [matMenuTriggerFor]="menu">      
+            <img src="../../assets/burger_menu_bl.png" style="height:32px; border:0px">  
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>Item 1_____________________</button>
+            <button mat-menu-item>Item 2</button>
+            <button mat-menu-item>Item 3</button>
+            <button mat-menu-item>Item 4</button>
+            <button mat-menu-item>Item 5</button>
+          </mat-menu>
+    </td>
+    <td>
+        <img src="../../assets/sparta.png" style="height:32px">
+    </td>
+  </tr>
+</table> 
 </div>
+    
