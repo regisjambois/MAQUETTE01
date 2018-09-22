@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'PROJET SPARTA';
+  title = 'Maquette de la page d\'accueil du projet SPARTA';
 }
