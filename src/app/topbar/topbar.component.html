@@ -1,4 +1,30 @@
 
+<mat-toolbar color="primary" style="background-color:#030a49">
+     
+        <mat-toolbar-row>
+                <button mat-button [matMenuTriggerFor]="menu">      
+                    <mat-icon>menu</mat-icon>    
+                </button>
+                <mat-menu #menu="matMenu">
+                        <button mat-menu-item>Item 1_____________________</button>
+                        <button mat-menu-item>Item 2</button>
+                        <button mat-menu-item>Item 3</button>
+                        <button mat-menu-item>Item 4</button>
+                        <button mat-menu-item>Item 5</button>
+                </mat-menu>  
+          <span>
+                <img src="../../assets/sparta.png" style="height:24px">
+          </span>
+          <span class="icones_droite"></span>
+          <mat-icon class="space-icon" matTooltip="Obtenir de l'aide">help</mat-icon>
+          <mat-icon matBadge="2" matBadgeColor="warn" class="space-icon" matTooltip="Notifications importantes">notifications</mat-icon>
+          <mat-icon class="space-icon" matTooltip="Rechercher un dossier">search</mat-icon>
+          <mat-icon class="space-icon" matTooltip="Paramètres personnels de l'application SPARTA">settings</mat-icon>
+          <mat-icon class="space-icon" matTooltip="Votre compte et profil">account_circle</mat-icon>
+        </mat-toolbar-row>
+</mat-toolbar>
+
+<!--
 <div style="height:80px; background-color:#030a49">
 <table border="0" style="height:80px;width: 100%" >
   <tr>
@@ -32,9 +58,10 @@
         <img src="../../assets/spacer.png" style="height:20px; border:0px"> 
 
         <img src="../../assets/account_bl.png" style="height:32px; border:0px">
-        <img src="../../assets/spacer.png" style="height:32px; border:0px">    
+        <img src="../../assets/spacer.png" style="height:32px; border:0px">  
+                
     </td>
   </tr>
 </table> 
 </div>
-
+-->
