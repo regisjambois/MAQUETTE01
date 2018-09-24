@@ -44,6 +44,8 @@ import {
 } from '@angular/material';
 import { TabactivitesComponent } from './tabactivites/tabactivites.component';
 import { ZonerechercheComponent } from './zonerecherche/zonerecherche.component';
+import { ActivitesrecrutementComponent } from './activitesrecrutement/activitesrecrutement.component';
+import { LeftnavComponent } from './leftnav/leftnav.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +53,9 @@ import { ZonerechercheComponent } from './zonerecherche/zonerecherche.component'
     TopbarComponent,
     CardtestComponent,
     TabactivitesComponent,
-    ZonerechercheComponent
+    ZonerechercheComponent,
+    ActivitesrecrutementComponent,
+    LeftnavComponent
   ],
   imports: [
     BrowserModule,    

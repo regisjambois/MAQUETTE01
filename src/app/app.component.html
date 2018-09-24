@@ -1,5 +1,14 @@
 <!-- Topbar -->
-<div>
-  <app-topbar></app-topbar>
-  <app-tabactivites></app-tabactivites>
-</div>
+
+<mat-sidenav-container class="example-container">
+    <mat-sidenav mode="side" opened style="width:100px;background-color:skyblue">
+      zone gauche
+    </mat-sidenav>
+    <!-- contenu principal -->
+    <mat-sidenav-content>
+        <div>
+            <app-topbar></app-topbar>
+            <app-tabactivites></app-tabactivites>
+          </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

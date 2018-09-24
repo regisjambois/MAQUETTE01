@@ -1,4 +1,7 @@
-<mat-tab-group>
+<div style="height:20px;background-color:rgb(205, 217, 221); ">
+    <span></span>
+</div>
+<mat-tab-group style="background:rgb(205, 217, 221); ">
     <mat-tab>
       <ng-template mat-tab-label>
         <mat-icon class="tab-icon">dashboard</mat-icon>
@@ -6,10 +9,11 @@
       </ng-template>
       <mat-card>
           <mat-card-header>              
-              <mat-card-title>Tableau de bord : CIRFA de Paris</mat-card-title>
-              
+              <mat-card-title>Tableau de bord : <b>CIRFA de Paris : C750</b></mat-card-title>
           </mat-card-header>
-          <mat-card-content>                
+          <mat-card-content>
+              <!-- Activités de recrutement -->
+              <app-activitesrecrutement></app-activitesrecrutement>                
           </mat-card-content>
       </mat-card>     
     </mat-tab>
@@ -59,4 +63,4 @@
     </mat-tab>
 
 </mat-tab-group>
-  
+
