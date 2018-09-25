@@ -46,6 +46,7 @@ import { TabactivitesComponent } from './tabactivites/tabactivites.component';
 import { ZonerechercheComponent } from './zonerecherche/zonerecherche.component';
 import { ActivitesrecrutementComponent } from './activitesrecrutement/activitesrecrutement.component';
 import { LeftnavComponent } from './leftnav/leftnav.component';
+import { LoggerService } from './logger.service';
 // import { Globals } from './app.variablesGlobales';
 
 @NgModule({
@@ -97,7 +98,7 @@ import { LeftnavComponent } from './leftnav/leftnav.component';
   MatTooltipModule,
   MatTreeModule
   ],
-  providers: [],
+  providers: [LoggerService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
