@@ -1,9 +1,12 @@
 <!-- Topbar -->
-
 <mat-sidenav-container class="example-container">
-    <mat-sidenav mode="side" opened style="width:100px;background-color:skyblue">
-      zone gauche
-    </mat-sidenav>
+
+    <!-- zone gauche -->
+    <div *ngIf="sns">
+        <mat-sidenav  mode="side" opended style="width:100px;background-color:skyblue">
+        zone gauche
+        </mat-sidenav>
+    </div>
     <!-- contenu principal -->
     <mat-sidenav-content>
         <div>

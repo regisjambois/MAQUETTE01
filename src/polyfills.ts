@@ -1,5 +1,5 @@
-// import 'hammerjs';
-// import 'web-animations-js';
+import 'hammerjs';
+import 'web-animations-js';
 
 /**
  * This file includes polyfills needed by Angular and is loaded before the app.

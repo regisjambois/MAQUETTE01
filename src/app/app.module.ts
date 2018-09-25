@@ -46,6 +46,7 @@ import { TabactivitesComponent } from './tabactivites/tabactivites.component';
 import { ZonerechercheComponent } from './zonerecherche/zonerecherche.component';
 import { ActivitesrecrutementComponent } from './activitesrecrutement/activitesrecrutement.component';
 import { LeftnavComponent } from './leftnav/leftnav.component';
+// import { Globals } from './app.variablesGlobales';
 
 @NgModule({
   declarations: [
@@ -99,4 +100,11 @@ import { LeftnavComponent } from './leftnav/leftnav.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  
+  constructor() {
+    console.log("Constructeur AppModule");
+    
+  }
+  
+ }
