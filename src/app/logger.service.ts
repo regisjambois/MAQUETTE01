@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 /**
- * 
+ * WINDOWS 10
  */
 export class LoggerService {
 
