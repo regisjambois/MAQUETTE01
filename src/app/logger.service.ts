@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 /**
- * 
+ * MAC OS
  */
 export class LoggerService {
 
