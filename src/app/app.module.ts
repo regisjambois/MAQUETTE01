@@ -1,10 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { TopbarComponent } from './topbar/topbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CardtestComponent } from './cardtest/cardtest.component';
-
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {
   MatAutocompleteModule,
   MatBadgeModule,
@@ -47,17 +46,17 @@ import { ZonerechercheComponent } from './zonerecherche/zonerecherche.component'
 import { ActivitesrecrutementComponent } from './activitesrecrutement/activitesrecrutement.component';
 import { LeftnavComponent } from './leftnav/leftnav.component';
 import { LoggerService } from './logger.service';
-// import { Globals } from './app.variablesGlobales';
+import { GraphComponent } from './graph/graph.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    TopbarComponent,
+    AppComponent,    
     CardtestComponent,
     TabactivitesComponent,
     ZonerechercheComponent,
     ActivitesrecrutementComponent,
-    LeftnavComponent
+    LeftnavComponent,
+    GraphComponent
   ],
   imports: [
     BrowserModule,    
@@ -96,7 +95,9 @@ import { LoggerService } from './logger.service';
   MatTabsModule,
   MatToolbarModule,
   MatTooltipModule,
-  MatTreeModule
+  MatTreeModule,
+  ReactiveFormsModule, 
+  FormsModule
   ],
   providers: [LoggerService],
   bootstrap: [AppComponent]

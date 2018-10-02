@@ -1,17 +1,44 @@
 <!-- Topbar -->
-<mat-sidenav-container class="example-container">
+<mat-toolbar style="background-color:#030a49; ">
+    <mat-toolbar-row>       
+        <button (click)="drawer.toggle()" mat-mini-fab style="background-color:midnightblue; color:white;border:0px">      
+            <mat-icon >menu</mat-icon>
+        </button>
+        <!-- logo sparta -->      
+        <span>
+                <img src="../../assets/spacer.png" style="height:10px; border:0px">
+                <img src="../../assets/sparta.png" style="height:24px">
+        </span>
+        <!-- barre d'icones à droite -->
+        <span class="icones_droite"></span>
+            <button mat-mini-fab class="rightToolBar" >
+                <mat-icon matTooltip="Obtenir de l'aide">help</mat-icon>
+            </button>
 
+            <img src="../../assets/spacer.png" style="height:10px; border:0px">
+            <button mat-mini-fab class="rightToolBar">
+                <mat-icon matBadge="2" matBadgeColor="warn" matTooltip="Notifications importantes">notifications</mat-icon>
+            </button>
+            
+            <img src="../../assets/spacer.png" style="height:10px; border:0px">
+            <button mat-mini-fab class="rightToolBar">
+                <mat-icon matTooltip="Votre compte et profil">account_circle</mat-icon>
+            </button>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container hasBackdrop="false" role="navigation" class="example-container">
+    
     <!-- zone gauche -->
-    <div *ngIf="sns">
-        <mat-sidenav  mode="side" opended style="width:100px;background-color:skyblue">
-        zone gauche
-        </mat-sidenav>
-    </div>
+    <mat-sidenav  #drawer mode="push" style="width:70px;background-color:white">
+          <app-leftnav></app-leftnav>  
+    </mat-sidenav>
+    
     <!-- contenu principal -->
-    <mat-sidenav-content>
-        <div>
-            <app-topbar></app-topbar>
+    <mat-sidenav-content role="main">
+        <div>            
             <app-tabactivites></app-tabactivites>
-          </div>
+        </div>
+       
     </mat-sidenav-content>
 </mat-sidenav-container>
