@@ -47,6 +47,7 @@ import { ActivitesrecrutementComponent } from './activitesrecrutement/activitesr
 import { LeftnavComponent } from './leftnav/leftnav.component';
 import { LoggerService } from './logger.service';
 import { GraphComponent } from './graph/graph.component';
+import { DossiercandidatComponent } from './dossiercandidat/dossiercandidat.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { GraphComponent } from './graph/graph.component';
     ZonerechercheComponent,
     ActivitesrecrutementComponent,
     LeftnavComponent,
-    GraphComponent
+    GraphComponent,
+    DossiercandidatComponent
   ],
   imports: [
     BrowserModule,    

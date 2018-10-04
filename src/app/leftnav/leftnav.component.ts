@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {MatDialog} from '@angular/material';
+// import { DossiercandidatComponent } from '../dossiercandidat/dossiercandidat.component';
 
 @Component({
   selector: 'app-leftnav',
@@ -7,8 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LeftnavComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
+  openDossierDialog() {
+    // const dialogRef = this.dialog.open(DossiercandidatComponent);
+  }
   ngOnInit() {
   }
 

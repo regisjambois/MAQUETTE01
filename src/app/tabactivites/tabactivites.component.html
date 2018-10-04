@@ -8,9 +8,9 @@
         tableau de bord
       </ng-template>
       <mat-card>
-          <mat-card-header>              
-              <mat-card-title>Tableau de bord : <b>CIRFA de Paris : C750</b></mat-card-title>
-          </mat-card-header>
+                       
+          <div style="text-align: center; background-color:#a9bacc">Tableau de bord : <b>CIRFA de Paris : C750</b></div>
+          
           <mat-card-content>
               <!-- Activités de recrutement -->
               <app-activitesrecrutement></app-activitesrecrutement>                
@@ -60,6 +60,12 @@
           <mat-card-content>                
           </mat-card-content>
       </mat-card>  
+    </mat-tab>
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon class="tab-icon">settings</mat-icon>
+            administration
+        </ng-template>
     </mat-tab>
 
 </mat-tab-group>
